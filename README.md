@@ -4,9 +4,7 @@ Typescript
 TSLint: Linter
 JEST: Unit test
 
-Useful for quickly start your algorithm coding in typescript
-
-### Why? 
+Quickly test your short problem in typescript
 
 ### Flow
 1. Put your code into fibonacci.ts
@@ -42,7 +40,7 @@ So that when you change your code/test, the test automatically call your code an
 
 ### Code
 Example: fibonacci.ts
-```js
+```typescript
 export function fib(n: number): number {
   console.log("n: ", n);
   
@@ -52,7 +50,7 @@ export function fib(n: number): number {
 
 ### Test
 Example: fibonacci.test.ts
-```
+```typescript
 import forOwn from 'lodash/forOwn'
 import fib from './fibonacci'
 

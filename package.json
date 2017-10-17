@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "boilerplate for start coding typescript with jest test + tslint linter",
   "author": "luatnd",
-  "license": "MiT",
+  "license": "MIT",
   "scripts": {
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "test": "jest",
-    "watch": "jest --watch",
-    "debug": "ts-node"
+    "test": "yarn lint && jest",
+    "watch": "yarn lint && jest --watch",
+    "debug": "yarn lint && ts-node"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.77",

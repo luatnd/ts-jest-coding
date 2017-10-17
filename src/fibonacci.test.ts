@@ -1,7 +1,7 @@
-import forOwn from 'lodash/forOwn'
-import fib from './fibonacci'
+import forOwn from "lodash/forOwn";
+import fib from "./fibonacci";
 
-const testCases:{[n:number]:number} = {
+const testCases: {[n: number]: number} = {
   0: 0,
   1: 1,
   2: 1,
@@ -17,8 +17,9 @@ const testCases:{[n:number]:number} = {
   300: 0,
 };
 
-forOwn(testCases, (v, k) => {
+forOwn(testCases, (v: number, k: number) => {
   const n = parseInt(k); // NOTE: k is string, v is number, omg
+  // const n = k;
 
   it(`Test case: Fib(${n}) = ${v}`, () => expect(fib(n)).toBe(v));
 });

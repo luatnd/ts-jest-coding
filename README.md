@@ -37,8 +37,14 @@ Quickly test your short problem in typescript
 
 So that when you change your code/test, the test automatically call your code and run. 
 
+### Getting started
+```
+yarn install
+yarn test
+yarn watch
+```
 
-### Code
+#### Code
 Example: fibonacci.ts
 ```typescript
 export function fib(n: number): number {
@@ -48,7 +54,7 @@ export function fib(n: number): number {
 }
 ```
 
-### Test
+#### Test
 Example: fibonacci.test.ts
 ```typescript
 import forOwn from 'lodash/forOwn'
@@ -78,7 +84,7 @@ forOwn(testCases, (v, k) => {
 
 ```
 
-### Watch
+#### Watch
 
 ```bash
 yarn watch
@@ -86,7 +92,7 @@ yarn watch
 Jest will watch for changed files and run test for its
 
 
-### Debug a file without test:
+#### Debug a file without test:
 
 ```bash
 yarn debug -- src/fibonacci.ts

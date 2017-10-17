@@ -1,0 +1,34 @@
+{
+  "name": "ts-jest-coding",
+  "version": "0.0.1",
+  "description": "boilerplate for start coding typescript with jest test + tslint linter",
+  "author": "luatnd",
+  "license": "MiT",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "test": "jest",
+    "watch": "jest --watch",
+    "debug": "ts-node"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.77",
+    "jest": "^21.2.1",
+    "lodash": "^4.17.4",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.7.0",
+    "typescript": "^2.4.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".*(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/src/*.test.(ts|tsx|js)"
+    ]
+  }
+}
